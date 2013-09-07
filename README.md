@@ -1,4 +1,4 @@
-Big-Screens-Quicktime-Player
+Big Screens Quicktime Player
 ============================
 
 Cinder support for playing large Quicktime movies across multiple screens.
@@ -7,23 +7,23 @@ One Player acts as the "clock" over a UDP socket to synchronize all of the Playe
 
 ###Usage
 * Distribute a copy of the Player to each machine.  
-  For development, you can also run multiple players on a single machine.
+  For development, you can also run multiple Players on a single machine.
   
-* Modify the settings.xml file for each player. See below for details.  
+* Modify the settings.xml file for each Player. See below for details.  
 
-* Launch the players. 
+* Launch the Players. 
 
 ####Settings
-Each player must have a "settings.xml" file in the same directory as the Player. 
-If you're running multiple players on a single machine, just
+Each Player must have a "settings.xml" file in the same directory as the Player. 
+If you're running multiple Players on a single machine, just
 put them each in their own subfolder (like they're structured in the repo). 
 
 ```xml
 <settings>
-  <!-- Determines which machine is the clock. There can be only 1. -->
-	<is_clock>false</is_clock>
-  <!-- The absolute path to the Quicktime compatible video file. -->
-	<movie_path>/Users/bill/Desktop/whistle.mov</movie_path>
+  <!-- Determines which machine is the clock. There can be only 1. -->  
+  <is_clock>false</is_clock>
+  <!-- The absolute path to the Quicktime compatible video file. -->  
+  <movie_path>/Users/bill/Desktop/whistle.mov</movie_path>
   <!-- 
     The port that the non-clock clients are listening for timing messages on. 
     Not required for the clock Player.
@@ -31,8 +31,8 @@ put them each in their own subfolder (like they're structured in the repo).
   <listen_port>9004</listen_port>
   <!-- 
     The port(s) that the clock is broadcasting to. 
-    This can be a single port if the players are on different machines,
-    but there must be a unique port for each player on a single machine.
+    This can be a single port if the Players are on different machines,
+    but there must be a unique port for each Player on a single machine.
     The later case is useful for development.
     Not required for non-clock Players.
   -->
@@ -60,8 +60,8 @@ put them each in their own subfolder (like they're structured in the repo).
   <!-- 
     Forces the app into full-screen mode upon launch. 
     The local_dimensions should be the same as the screen dimensions. 
-  -->
-	<go_fullscreen>false</go_fullscreen>
+  -->  
+  <go_fullscreen>false</go_fullscreen>
   <!-- Positions the Player window within the screen. -->
   <offset_window>true</offset_window>
 </settings>
