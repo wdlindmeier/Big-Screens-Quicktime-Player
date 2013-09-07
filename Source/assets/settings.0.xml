@@ -1,5 +1,4 @@
 <settings>
-	<client_id>0</client_id>
 	<is_clock>false</is_clock>
 	<movie_path>/Users/bill/Desktop/whistle.mov</movie_path>
     <listen_port>9004</listen_port>
@@ -17,5 +16,4 @@
 	</master_dimensions>
 	<go_fullscreen>false</go_fullscreen>
     <offset_window>true</offset_window>
-	<debug>1</debug>
 </settings>

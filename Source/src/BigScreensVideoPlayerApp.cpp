@@ -225,6 +225,12 @@ void BigScreensVideoPlayerApp::draw()
             
             gl::disable(GL_SCISSOR_TEST);
         }
+        else
+        {
+            gl::enableAlphaBlending();
+            gl::drawString("ERROR: Could not load movie.", Vec2f(20, 20));
+            gl::disableAlphaBlending();
+        }
     }
     else
     {
